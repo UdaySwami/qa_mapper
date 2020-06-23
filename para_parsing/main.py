@@ -1,5 +1,6 @@
 import os
-from para_parsing.file_parser import Parser
+from qa_mapper.para_parsing.file_parser import Parser
+# from qa_mapper.para_parsing import Parser
 import nltk
 nltk.data.path.append(os.path.abspath(os.path.curdir))
 
@@ -49,6 +50,6 @@ class QAMapper:
 
 if __name__ == '__main__':
     paragraph_file_name = "para"
-    paragraph_file_name = "sachin_tendulkar_test_para"
+    # paragraph_file_name = "sachin_tendulkar_test_para"
     mapper = QAMapper(paragraph_file_name)
     mapper.find_answers()
